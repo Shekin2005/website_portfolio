@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Explore 360</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.sidebar').classList.toggle('show');
+        }
+    </script>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+
+  <!-- TOP BAR (ONLY NAV CONTENT) -->
+  <header class="top-bar">
+    <button onclick="history.back()">← Go Back</button>
+    <a href="../../index.html" class="home-link">Home</a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- SIDEBAR (OUTSIDE HEADER) -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="restaurants.html">Restaurants</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+      <li><a href="things to do.html">Things to do</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="guideline.html">Guidelines</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="reviews.php">Reviews</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <div class="header">
+      <img src="https://images.squarespace-cdn.com/content/5f7c7de712dbbe4d2c21a154/1602771816048-F3U0A7XAMGGAEBOYGRBS/wolfville+logo_transparent+backgroud.png?format=1500w&content-type=image%2Fpng"
+           alt="Wolfville Logo"
+           class="logo">
+    </div>
+
+    <h1 class="title">Wolfville</h1>
+    <h1>Contacts</h1>
+
+    <div class="card">
+      <h2>Wolfville Town Hall</h2>
+      <p>📞 <strong>902-542-5767</strong></p>
+      <p>📍 <strong>359 Main St, Wolfville, NS B4P 1A1</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>Emergency</h2>
+      <p>📞 <strong>911</strong></p>
+      <p>📞 <strong>902-542-3817</strong></p>
+    </div>
+  </div>
+
+  <!-- IMAGES -->
+  <div class="image-container">
+    <img src="https://i.cbc.ca/1.4906683.1542296739!/fileImage/httpImage/image.jpg_gen/derivatives/original_780/wolfville-town-hall.jpg">
+    <img src="https://i.ytimg.com/vi/tgXkP_cTRQk/maxresdefault.jpg">
+  </div>
+
+</body>
+
+</html>

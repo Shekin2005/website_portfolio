@@ -1,0 +1,338 @@
+/* styles.css */
+/* General Styles */
+/* Reset – VERY important */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: block;      /* prevents full-page stretching */
+  font-family: Arial, sans-serif;
+}
+
+/* Top navigation bar */
+.top-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #4f7f6a;
+  padding: 1px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Back button */
+.top-bar button {
+  background-color: #a8d5ba;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.top-bar button:hover {
+  background-color: #94c9a9;
+}
+
+/* Home link (force white) */
+.top-bar a.home-link,
+.top-bar a.home-link:link,
+.top-bar a.home-link:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffedd5;
+    color: #5a3e2b;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffe4b5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #8b4513;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #f4a460;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 250px; /* Make images large */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+strong {
+    font-size: 2em; /* Increase name size 3x */
+}
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background: #f4a460;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+.sidebar {
+    width: 200px;
+    background: #f4a460;
+    padding: 15px;
+    border-radius: 8px;
+    position: fixed;
+    height: 100%;
+    left: -220px;
+    transition: left 0.3s;
+}
+.sidebar.show {
+    left: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #ffe4b5;
+    border-radius: 5px;
+    text-align: center;
+}
+.sidebar a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+/* Things to do Section */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: #ffe4b5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 15px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .listing {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .listing img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .details {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    padding: 5px 10px;
+    background: #f4a460;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-content {
+    display: none;
+    padding: 10px;
+    background: #f4a460;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .details-content.show {
+    display: block;
+  }
+
+ /* events Section */ 
+ body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffedd5;
+    color: #5a3e2b;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffe4b5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filters input, .filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+.event-item {
+    display: flex;
+    align-items: center;
+    background: #f4a460;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.event-item img {
+    width: 250px; /* Make images large */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.event-item div {
+    flex: 1;
+}
+.event-item strong {
+    font-size: 2em; /* Increase name size */
+    color: #8b4513;
+}
+.event-item p {
+    margin: 5px 0;
+    color: #5a3e2b;
+}
+/* Reviews Section */
+  /* Additional Styles */
+  .review-form input, .review-form textarea, .review-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #8b4513;
+    border-radius: 5px;
+    background: #ffe4b5;
+    color: #5a3e2b;
+}
+.review-form button {
+    background: #8b4513;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.review-form button:hover {
+    background: #5a3e2b;
+}
+
+/* Star Rating System */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 24px;
+}
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    cursor: pointer;
+    color: gray;
+    transition: color 0.2s;
+}
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: rgb(255, 251, 0);
+}
+.review-list {
+    margin-top: 20px;
+}
+.review {
+    background: #f4a460;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #8b4513;
+}
+.logo {
+    width: 100px; /* Increase the size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it's displayed as a block element */
+    margin: 0 auto; /* Center the logo */
+    margin-bottom: 20px; /* Add space below */
+}
